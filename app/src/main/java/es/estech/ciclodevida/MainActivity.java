@@ -7,7 +7,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    static final String TAG = "CICLO DE VIDA";
+    static final String TAG = "CICLO_DE_VIDA";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override protected void onPause() {
+        Log.d(TAG, "onPause");
         super.onPause();
     }
 
